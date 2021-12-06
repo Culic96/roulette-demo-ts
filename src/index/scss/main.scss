@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@mixin FlexCenter($direction){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+header{
+  @include FlexCenter(column);
+  h1{
+      text-transform: uppercase;
+      font-size: 1.5em;
+  }
+  p{
+      font-size: 1.5em;
+      height: 30px;
+      width: 30%;
+      border: 1px solid red;
+      text-align: center;
+      margin-top: 10px;
+  }
+}
