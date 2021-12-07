@@ -3,24 +3,94 @@
   padding: 0;
   box-sizing: border-box;
 }
-@mixin FlexCenter($direction){
+
+
+@mixin btnStyle($background) {
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: $background;
+}
+@mixin flexCenter($direction){
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: $direction;
 }
+body{
+  background:fixed;
+  background-image: url("./table.png");
+  height: 100vh; 
+}
 header{
-  @include FlexCenter(column);
+  @include flexCenter(column);
   h1{
       text-transform: uppercase;
       font-size: 1.5em;
+      color: #fff;
   }
   p{
       font-size: 1.5em;
       height: 30px;
-      width: 30%;
-      border: 1px solid red;
+      width: 50%;
+      border: 2px solid orange;
       text-align: center;
       margin-top: 10px;
+      color: #fff;
+  }
+  #chipsInput{
+    margin-top: 10px;
+    height: 30px;
+    width: 30%;
+  }
+}
+div{
+  @include flexCenter(row);
+}
+.btn-red{
+  @include btnStyle(red);
+}
+.btn-black{
+  @include btnStyle(black);
+}
+.btn-green{
+  @include btnStyle(green);
+}
+table{
+    @include flexCenter(column);
+    padding-top: 10px;
+  .roulette-body{
+    @include flexCenter(column);
+  }
+}
+#show-box{
+  color: #fff;
+  background-color: black;
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  @include flexCenter(column);
+}
+.bottom{
+  @include flexCenter(column);
+  button{
+    margin-top: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: goldenrod;
+    color: #fff;
+  }
+  p{
+    margin-top: 10px;
+    color: #fff;
+  }
+  #hand-msg{
+    font-size: 1.5em;
+    height: 30px;
+    width: 50%;
+    border: 2px solid orange;
+    text-align: center;
+    margin-top: 10px;
   }
 }
