@@ -4,3 +4,4 @@ import './scss/index.scss';
 
 import './js/main';
 import './js/test.ts';
+import './js/main.ts';
