@@ -1,0 +1,20 @@
+
+.msgInfo{
+  background-color: lightblue;
+  font-weight: lighter;
+  font-style: italic;
+  color: white;
+}
+.msgSuccess{
+  background-color: lightgreen;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  color: white;
+}
+.msgError{
+  background-color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}

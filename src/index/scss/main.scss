@@ -29,15 +29,7 @@ header{
       font-size: 1.5em;
       color: #fff;
   }
-  p{
-      font-size: 1.5em;
-      height: 30px;
-      width: 50%;
-      border: 2px solid orange;
-      text-align: center;
-      margin-top: 10px;
-      color: #fff;
-  }
+
   #chipsInput{
     margin-top: 10px;
     height: 30px;
@@ -94,3 +86,12 @@ table{
     margin-top: 10px;
   }
 }
+#main-msg span{
+  font-size: 1.5em;
+  height: 30px;
+  width: 50%;
+  border: 2px solid orange;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+} 
