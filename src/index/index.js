@@ -2,6 +2,5 @@ import './index.html';
 
 import './scss/index.scss';
 
-import './js/main';
-import './js/test.ts';
-import './js/main.ts';
+import './js/roulette.ts';
+import './js/app.ts';

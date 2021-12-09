@@ -9,7 +9,9 @@
     "dev:server": "webpack serve",
     "dev:clean": "./node_modules/rimraf/bin.js ./dist",
     "dev:new-page": "node ./scriptrunner.js newpage $npm_config_name",
+    "dev:win-new-page": "node ./scriptrunner.js newpage",
     "dev:del-page": "node ./scriptrunner.js delpage $npm_config_name",
+    "dev:win-del-page": "node ./scriptrunner.js delpage",
     "prod:build": "NODE_ENV=prod webpack"
   },
   "keywords": [],
